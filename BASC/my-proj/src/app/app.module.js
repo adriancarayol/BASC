@@ -11,7 +11,7 @@ var login_component_1 = require("./login/login.component");
 var app_component_1 = require("./app.component");
 var router_1 = require("@angular/router");
 var appRoutes = [
-    { path: '', component: login_component_1.LoginComponent }
+    { path: '**', component: login_component_1.LoginComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
