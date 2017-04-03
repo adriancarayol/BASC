@@ -8,14 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var LoginComponent = (function () {
     function LoginComponent() {
-        this.title = 'Es hora de hacer realidad tu proyecto.';
     }
     return LoginComponent;
 }());
 LoginComponent = __decorate([
     core_1.Component({
         selector: 'login',
-        templateUrl: 'login.html',
+        templateUrl: './login.html',
+        styleUrls: ['./css/login.css'],
     })
 ], LoginComponent);
 exports.LoginComponent = LoginComponent;

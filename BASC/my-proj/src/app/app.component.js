@@ -10,11 +10,15 @@ var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular';
     }
+    AppComponent.prototype.ngOnInit = function () {
+        console.log("OK");
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
+        templateUrl: './main.html',
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

@@ -1,10 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+	<header>
+	<nav>
+		<div class="nav-wrapper white">
+			<a [routerLink]="['']" class="brand-logo center light-blue-text text-lighten-3"><img src="/img/rocket-icon.png" width='30px' height='30px'> BASC</a>
+		</div>
+	</nav>
+	</header>
+	<main>
+		<div class="container">
+		<div class="section">
+			<div class="row">
+				<div class="col offset-l4 l4 s12 white z-depth-2 login-wrapper">
+					<h4 class="center-align light-blue-text text-lighten-3">Inicia sesión</h4>
+					<div class="divider"></div>
+					<div class="row">
+						<form class="col s12">
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">account_circle</i>
+									<input id="email" type="email" class="validate">
+									<label for="email">Usuario o correo electrónico</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12">
+									<i class="material-icons prefix">lock</i>
+									<input id="pass" type="password" class="validate">
+									<label for="pass">Contraseña</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s12">
+									<p>
+										<input type="checkbox" id="remember">
+										<label for="remember">Recuerdame</label>
+									</p>
+								</div>
+							</div>
+							<div class="divider"></div>
+							<div class="row">
+								<div class="col s12">
+									<p>
+										<button class="btn btn-large waves-effect waves-light left light-blue lighten-3" type="button" name="action">Iniciar sesión</button>
+										<button class="btn btn-large waves-effect waves-light right light-blue lighten-3" type="button" name="action">Registrar</button>
+									</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			</div>
+			<br><br>
+			<div class="section"></div>
+		</div>
+	</main>
+	<footer class="page-footer white ">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="light-blue-text text-lighten-3">Base Founding</h5>
+                <p class="light-blue-text text-lighten-3">Es hora de hacer realidad tu proyecto.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="light-blue-text text-lighten-3">Links</h5>
+                <ul>
+                  <li><a class="light-blue-text text-darken-3" href="#!">Nosotros</a></li>
+                  <li><a class="light-blue-text text-darken-3" href="#!">Link 2</a></li>
+                  <li><a class="light-blue-text text-darken-3" href="#!">Link 3</a></li>
+                  <li><a class="light-blue-text text-darken-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container light-blue-text text-darken-3">
+            © 2017 Copyright Text
+            </div>
+          </div>
+        </footer>
