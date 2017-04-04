@@ -9,8 +9,9 @@ declare var $:any;
 })
 
 export class AppComponent implements OnInit { 
-	name = 'Angular'; 
+	constructor() {
 
+	}
 	ngOnInit() {
 		console.log("OK");
 	}

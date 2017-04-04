@@ -1,10 +1,4 @@
-	<header>
-	<nav>
-		<div class="nav-wrapper white">
-			<a [routerLink]="['']" class="brand-logo center light-blue-text text-lighten-3"><img src="/img/rocket-icon.png" width='30px' height='30px'> BASC</a>
-		</div>
-	</nav>
-	</header>
+
 	<main>
 		<div class="container">
 		<div class="section">
@@ -64,7 +58,7 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="light-blue-text text-lighten-3">Links</h5>
                 <ul>
-                  <li><a class="light-blue-text text-darken-3" href="#!">Nosotros</a></li>
+                  <li><a class="light-blue-text text-darken-3" [routerLink]="['/about']">Nosotros</a></li>
                   <li><a class="light-blue-text text-darken-3" href="#!">Link 2</a></li>
                   <li><a class="light-blue-text text-darken-3" href="#!">Link 3</a></li>
                   <li><a class="light-blue-text text-darken-3" href="#!">Link 4</a></li>
