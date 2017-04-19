@@ -1,32 +1,52 @@
 
-	<main>
-		<div class="container">
+<main>
+	<div class="container">
 		<div class="section">
 			<div class="row">
-				<div class="carousel carousel-slider center" data-indicators="true">
-				    <div class="carousel-fixed-item center">
-				      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-				    </div>
-				    <div class="carousel-item red white-text" href="#one!">
-				      <h2>First Panel</h2>
-				      <p class="white-text">This is your first panel</p>
-				    </div>
-				    <div class="carousel-item amber white-text" href="#two!">
-				      <h2>Second Panel</h2>
-				      <p class="white-text">This is your second panel</p>
-				    </div>
-				    <div class="carousel-item green white-text" href="#three!">
-				      <h2>Third Panel</h2>
-				      <p class="white-text">This is your third panel</p>
-				    </div>
-				    <div class="carousel-item blue white-text" href="#four!">
-				      <h2>Fourth Panel</h2>
-				      <p class="white-text">This is your fourth panel</p>
-				    </div>
-				  </div>
+				<div class="col s12">
+					<div class="card">
+						<div class="card-image">
+							<div class="carousel carousel-slider" data-indicators="true">
+								<p class="carousel-item"><img src="/img/project1.jpg"></p>
+								<p class="carousel-item"><img src="/img/project2.jpg"></p>
+							</div>
+							<span class="card-title">Titulo del proyecto</span>
+							<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+						</div>
+						<div class="card-content">
+							<p>Información sobre el proyecto.</p><br>
+							<p>
+								<span class="chip">Etiqueta 1</span>
+								<span class="chip">Etiqueta 2</span>
+								<span class="chip">Etiqueta 3</span>
+							</p>
+							<p>Conseguido: </p>
+							<div class="progress" title="OK">
+      							<div class="determinate" style="width: 70%"></div>
+  							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			</div>
-			<br><br>
-			<div class="section"></div>
 		</div>
-	</main>
+		<br><br>
+		<div class="section"></div>
+	</div>
+</main>
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>¿Quieres invertir en este proyecto?</h4>
+      <p>Información legal sobre la acción de invertir</p>
+      <div class="row">
+    <div class="input-field col s12">
+      <input value="10" id="first_name2" type="number" class="validate">
+      <label class="active" for="first_name2">Cantidad a invertir</label>
+    </div>
+  </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Si</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">No</a>
+    </div>
+</div>
