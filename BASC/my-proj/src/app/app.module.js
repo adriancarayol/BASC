@@ -11,10 +11,14 @@ var login_component_1 = require("./login/login.component");
 var about_component_1 = require("./about/about.component");
 var app_component_1 = require("./app.component");
 var router_1 = require("@angular/router");
+var profile_component_1 = require("./profile/profile.component");
+var project_component_1 = require("./project/project.component");
 var appRoutes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: login_component_1.LoginComponent },
-    { path: 'about', component: about_component_1.AboutComponent }
+    { path: 'about', component: about_component_1.AboutComponent },
+    { path: 'profile', component: profile_component_1.ProfileComponent },
+    { path: 'project', component: project_component_1.ProjectComponent }
 ];
 var appRoutingProviders = [];
 var routing = router_1.RouterModule.forRoot(appRoutes);
@@ -30,7 +34,7 @@ AppModule = __decorate([
         ],
         providers: [appRoutingProviders
         ],
-        declarations: [app_component_1.AppComponent, login_component_1.LoginComponent, about_component_1.AboutComponent],
+        declarations: [app_component_1.AppComponent, login_component_1.LoginComponent, about_component_1.AboutComponent, profile_component_1.ProfileComponent, project_component_1.ProjectComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
