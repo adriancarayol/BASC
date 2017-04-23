@@ -7,13 +7,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectComponent } from './project/project.component';
+import { SearchComponent } from './search/search.component';
 
 const appRoutes:Routes = [
 	{path: '', redirectTo: 'login', pathMatch: 'full'},
 	{path: 'login', component: LoginComponent},
 	{path: 'about', component: AboutComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: 'project', component: ProjectComponent}
+  {path: 'project', component: ProjectComponent},
+  {path: 'search', component: SearchComponent},
 ];
 
 const appRoutingProviders: any[] = [
@@ -28,7 +30,7 @@ const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
    ],
    providers: [ appRoutingProviders
    ],
-  declarations: [ AppComponent, LoginComponent, AboutComponent, ProfileComponent, ProjectComponent ],
+  declarations: [ AppComponent, LoginComponent, AboutComponent, ProfileComponent, ProjectComponent, SearchComponent ],
   bootstrap:    [ AppComponent ]
 })
 

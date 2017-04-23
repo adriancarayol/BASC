@@ -1,0 +1,113 @@
+
+<header>
+	<nav>
+		<div class="nav-wrapper white">
+			<a [routerLink]="['']" class="brand-logo center light-blue-text text-lighten-3"><img src="/img/rocket-icon.png" width='30px' height='30px'> BASC</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse light-blue-text text-lighten-3"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="#"><i class="material-icons light-blue-text text-lighten-3">more_vert</i></a></li>
+				<li><a href="#"><i class="material-icons light-blue-text text-lighten-3">view_module</i></a></li>
+				<li><a [routerLink]="['/profile']"><i class="material-icons light-blue-text text-lighten-3">account_circle</i></a></li>
+				<li><a href="#"><i class="material-icons light-blue-text text-lighten-3">search</i></a></li>
+			</ul>
+			<ul class="right hide-on-med-and-down">
+				<li><a class="waves-effect waves-light btn light-blue lighten-3">Submit your project</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="#">Mis consultas</a></li>
+				<li><a href="#">Proyectos</a></li>
+				<li><a [routerLink]="['/profile']">Perfil</a></li>
+				<li>
+					<nav>
+						<div class="nav-wrapper blue lighten-3">
+							<form>
+								<div class="input-field">
+									<input id="search" type="search" required>
+									<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+									<i class="material-icons">close</i>
+								</div>
+							</form>
+						</div>
+					</nav>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<main>
+	<div class="container">
+		<div class="section">
+		<div class="row">
+			<h4 class="center">Resultados para tu búsqueda: string</h4>
+		</div>
+			<div class="row">
+				<div class="col s12">
+					<ul class="collection">
+						<li class="collection-item avatar">
+							<i class="material-icons circle">folder</i>
+							<span class="title">Proyecto 1, <b class="hightlight">string</b></span>
+							<p>Descripcion proyecto 1 <br>
+								<span class="chip">Etiqueta</span><span class="chip hightlight">string</span>
+							</p>
+							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+						</li>
+						<li class="collection-item avatar">
+							<i class="material-icons circle">folder</i>
+							<span class="title">Proyecto 2</span>
+							<p>Descripcion proyecto 1 <br>
+								<span class="chip">Etiqueta</span><span class="chip hightlight">string</span>
+							</p>
+							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+						</li>
+						<li class="collection-item avatar">
+							<i class="material-icons circle">folder</i>
+							<span class="title">Proyecto 3</span>
+							<p>Descripcion proyecto 1 <br>
+								<span class="chip">Etiqueta</span><span class="chip hightlight">string</span>
+							</p>
+							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+						</li>
+						<li class="collection-item avatar">
+							<i class="material-icons circle">folder</i>
+							<span class="title">Proyecto 4</span>
+							<p>Descripcion proyecto 1 <br>
+								<span class="chip">Etiqueta</span><span class="chip hightlight">string</span>
+							</p>
+							<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="section"></div>
+	</div>
+</main>
+
+<div id="modal1" class="modal">
+	<div class="modal-content">
+		<h4>¿Quieres invertir en este proyecto?</h4>
+		<p>Información legal sobre la acción de invertir</p>
+		<div class="row">
+			<div class="input-field col s12">
+				<input value="10" id="first_name2" type="number" class="validate">
+				<label class="active" for="first_name2">Cantidad a invertir</label>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Si</a>
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">No</a>
+	</div>
+</div>
+<div class="fixed-action-btn">
+	<a class="btn-floating btn-large red">
+		<i class="large material-icons">menu</i>
+	</a>
+	<ul>
+		<li><a class="btn-floating red"><i class="material-icons">star</i></a></li>
+		<li><a class="btn-floating yellow darken-1"><i class="material-icons">block</i></a></li>
+		<li><a class="btn-floating green"><i class="material-icons">share</i></a></li>
+		<li><a class="btn-floating blue"><i class="material-icons">chat</i></a></li>
+	</ul>
+</div>

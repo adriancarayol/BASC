@@ -15,6 +15,7 @@ var ProjectComponent = (function () {
     ProjectComponent.prototype.ngOnInit = function () {
         $('.carousel.carousel-slider').carousel({ fullWidth: true });
         $('.modal').modal();
+        $(".button-collapse").sideNav();
     };
     return ProjectComponent;
 }());

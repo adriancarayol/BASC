@@ -15,5 +15,6 @@ export class ProjectComponent implements OnInit {
 	ngOnInit() {
 		$('.carousel.carousel-slider').carousel({fullWidth: true});
 		$('.modal').modal();
+		$(".button-collapse").sideNav();
 	}
 }
