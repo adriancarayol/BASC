@@ -8,14 +8,16 @@ import { ModuleWithProviders } from '@angular/core';
 import { ProfileComponent } from './profile/profile.component';
 import { ProjectComponent } from './project/project.component';
 import { SearchComponent } from './search/search.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes:Routes = [
-	{path: '', redirectTo: 'login', pathMatch: 'full'},
+	{path: '', redirectTo: 'home', pathMatch: 'full'},
 	{path: 'login', component: LoginComponent},
 	{path: 'about', component: AboutComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'search', component: SearchComponent},
+  {path : 'home', component: HomeComponent}
 ];
 
 const appRoutingProviders: any[] = [
@@ -30,7 +32,8 @@ const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
    ],
    providers: [ appRoutingProviders
    ],
-  declarations: [ AppComponent, LoginComponent, AboutComponent, ProfileComponent, ProjectComponent, SearchComponent ],
+  declarations: [ AppComponent, LoginComponent, AboutComponent, 
+                  ProfileComponent, ProjectComponent, SearchComponent, HomeComponent ],
   bootstrap:    [ AppComponent ]
 })
 

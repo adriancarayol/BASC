@@ -1,0 +1,315 @@
+<header>
+	<nav>
+		<div class="nav-wrapper white">
+			<a [routerLink]="['']" class="brand-logo center light-blue-text text-lighten-3"><img src="/img/rocket-icon.png" width='30px' height='30px'> BASC</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse light-blue-text text-lighten-3"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="#"><i class="material-icons light-blue-text text-lighten-3">more_vert</i></a></li>
+				<li><a href="#"><i class="material-icons light-blue-text text-lighten-3">view_module</i></a></li>
+				<li><a [routerLink]="['/profile']"><i class="material-icons light-blue-text text-lighten-3">account_circle</i></a></li>
+				<li><a [routerLink]="['/search']"><i class="material-icons light-blue-text text-lighten-3">search</i></a></li>
+			</ul>
+			<ul class="right hide-on-med-and-down">
+				<li><a class="waves-effect waves-light btn white black-text" [routerLink]="['/login']">Are you member? <b>REGISTER / LOG IN</b></a></li>
+				<li><a class="waves-effect waves-light btn light-blue lighten-3">Submit your project</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="#">Mis consultas</a></li>
+				<li><a href="#">Proyectos</a></li>
+				<li><a [routerLink]="['/profile']">Perfil</a></li>
+				<li>
+					<nav>
+						<div class="nav-wrapper blue lighten-3">
+							<form>
+								<div class="input-field">
+									<input id="search" type="search" required>
+									<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+									<i class="material-icons">close</i>
+								</div>
+							</form>
+						</div>
+					</nav>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<main>
+	<div class="main-header">
+		<div class="carousel carousel-slider center" data-indicators="true">
+			<div class="carousel carousel-slider center" data-indicators="true">
+				<div class="carousel-fixed-item center">
+					<a class="btn waves-effect white grey-text darken-text-2">Descubre</a>
+				</div>
+				<div class="carousel-item white-text" href="#one!" style="background-image: url('/img/breather-187939.jpg'); background-size: cover;">
+					<h2>Explora proyectos creativos</h2>
+					<p class="white-text">Películas, juegos, libros, dispositivos, restaurantes, murales y mucho más.</p>
+				</div>
+				<div class="carousel-item white-text" href="#two!" style="background-image: url('/img/verena-yunita-yapi-203497.jpg'); background-size: cover;">
+					<h2>Y tú, ¿qué vas a crear?</h2>
+					<p class="white-text">BASC es una plataforma para financiar, elaborar y compartir proyectos creativos.</p>
+				</div>
+				<div class="carousel-item white-text" href="#three!" style="background-image: url('/img/mitchell-hollander-205952.jpg'); background-size: cover;">
+					<h2>Bienvenido, España.</h2>
+					<p class="white-text">Los creadores en España ya pueden publicar sus proyectos en Kickstarter. Echa un vistazo a lo que están creando.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="divider"></div>
+	<div class="section">
+		<div class="row">
+			<div class="col s12">
+				<div class="row">
+					<div class="col s12">
+						<ul class="tabs">
+							<li class="tab col s3"><a href="#test1">Arte</a></li>
+							<li class="tab col s3"><a class="active" href="#test2">Tecnología</a></li>
+							<li class="tab col s3 disabled"><a href="#test3">Salud</a></li>
+							<li class="tab col s3"><a href="#test4">Moda</a></li>
+						</ul>
+					</div>
+					<div id="test1" class="col s12">
+						<br>
+						<div class="row">
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project1.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project1.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project2.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="test2" class="col s12">
+						<div class="row">
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project2.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project1.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project1.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="test3" class="col s12">Test 3</div>
+					<div id="test4" class="col s12">
+						<div class="row">
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project2.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project2.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l3 m6 s12">
+								<div class="card">
+									<div class="card-image">
+										<img src="/img/project1.jpg">
+										<span class="card-title">Titulo del proyecto</span>
+										<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+									</div>
+									<div class="card-content">
+										<p>Información sobre el proyecto.</p><br>
+										<p>
+											<span class="chip">Etiqueta 1</span>
+											<span class="chip">Etiqueta 2</span>
+											<span class="chip">Etiqueta 3</span>
+										</p>
+										<p>Conseguido: </p>
+										<div class="progress" title="70">
+											<div class="determinate" style="width: 70%"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<div class="row">
+			<div class="col s12">
+				<span>
+					<h5 class="left">Financiación a punto de completarse</h5>
+					<a class="waves-effect waves-light btn right white black-text">Ver todas</a>
+				</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col l3 m6 s12">
+				<div class="card">
+					<div class="card-image">
+						<img src="/img/project1.jpg">
+						<span class="card-title">Titulo del proyecto</span>
+						<a class="btn-floating halfway-fab waves-effect waves-light green lighten-2" href="#modal1"><i class="material-icons">attach_money</i></a>
+					</div>
+					<div class="card-content">
+						<p>Información sobre el proyecto.</p><br>
+						<p>
+							<span class="chip">Etiqueta 1</span>
+							<span class="chip">Etiqueta 2</span>
+							<span class="chip">Etiqueta 3</span>
+						</p>
+						<p>Conseguido: </p>
+						<div class="progress" title="70">
+							<div class="determinate" style="width: 95%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

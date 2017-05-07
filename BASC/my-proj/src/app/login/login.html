@@ -18,7 +18,7 @@
 								<div class="input-field col s12">
 									<i class="material-icons prefix">account_circle</i>
 									<input id="email" type="email" class="validate">
-									<label for="email">Usuario o correo electrónico</label>
+									<label for="email">Correo electrónico</label>
 								</div>
 							</div>
 							<div class="row">
@@ -39,12 +39,13 @@
 							<div class="divider"></div>
 							<div class="row">
 								<div class="col s12">
-									<p>
-										<button class="btn btn-large waves-effect waves-light left light-blue lighten-3" type="button" name="action">Iniciar sesión</button>
-										<button class="btn btn-large waves-effect waves-light right light-blue lighten-3" type="button" name="action">Registrar</button>
-									</p>
+								<p style="text-align: center;">
+									<a class="btn waves-effect waves-light light-blue lighten-3" [routerLink]="['/project']">Iniciar sesión</a>
+								</p>
 								</div>
 							</div>
+							<div class="divider"></div>
+							 <p class="flow-text">¿Nuevo en BASC? <a>¡Registrame!</a></p>
 						</form>
 					</div>
 				</div>
@@ -65,9 +66,9 @@
                 <h5 class="light-blue-text text-lighten-3">Links</h5>
                 <ul>
                   <li><a class="light-blue-text text-darken-3" [routerLink]="['/about']">Nosotros</a></li>
-                  <li><a class="light-blue-text text-darken-3" href="#!">Link 2</a></li>
-                  <li><a class="light-blue-text text-darken-3" href="#!">Link 3</a></li>
-                  <li><a class="light-blue-text text-darken-3" href="#!">Link 4</a></li>
+                  <li><a class="light-blue-text text-darken-3" href="#!">Contacto</a></li>
+                  <li><a class="light-blue-text text-darken-3" href="#!">Ayuda</a></li>
+                  <li><a class="light-blue-text text-darken-3" href="#!">Condiciones legales</a></li>
                 </ul>
               </div>
             </div>
