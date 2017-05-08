@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProjectComponent } from './project/project.component';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
+import { SignUpComponent } from './signup/signup.component';
 
 const appRoutes:Routes = [
 	{path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,7 +18,8 @@ const appRoutes:Routes = [
   {path: 'profile', component: ProfileComponent},
   {path: 'project', component: ProjectComponent},
   {path: 'search', component: SearchComponent},
-  {path : 'home', component: HomeComponent}
+  {path : 'home', component: HomeComponent},
+  {path: 'signup', component: SignUpComponent}
 ];
 
 const appRoutingProviders: any[] = [
@@ -33,7 +35,7 @@ const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
    providers: [ appRoutingProviders
    ],
   declarations: [ AppComponent, LoginComponent, AboutComponent, 
-                  ProfileComponent, ProjectComponent, SearchComponent, HomeComponent ],
+                  ProfileComponent, ProjectComponent, SearchComponent, HomeComponent, SignUpComponent ],
   bootstrap:    [ AppComponent ]
 })
 

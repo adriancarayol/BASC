@@ -15,5 +15,6 @@ export class HomeComponent implements OnInit {
 	ngOnInit() {
 		$('.carousel.carousel-slider').carousel({fullWidth: true});
 		$('ul.tabs').tabs();
+		$(".button-collapse").sideNav();
 	}
 }

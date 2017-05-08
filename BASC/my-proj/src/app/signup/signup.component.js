@@ -9,18 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var LoginComponent = (function () {
-    function LoginComponent() {
+var SignUpComponent = (function () {
+    function SignUpComponent() {
     }
-    return LoginComponent;
+    SignUpComponent.prototype.ngOnInit = function () {
+        $('select').material_select();
+        $('.datepicker').pickadate({
+            selectMonths: true,
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
+    };
+    return SignUpComponent;
 }());
-LoginComponent = __decorate([
+SignUpComponent = __decorate([
     core_1.Component({
-        selector: 'login',
-        templateUrl: './login.html',
-        styleUrls: ['./css/login.css'],
+        selector: 'signup',
+        templateUrl: './signup.html',
+        styleUrls: ['./css/signup.css'],
     }),
     __metadata("design:paramtypes", [])
-], LoginComponent);
-exports.LoginComponent = LoginComponent;
-//# sourceMappingURL=login.component.js.map
+], SignUpComponent);
+exports.SignUpComponent = SignUpComponent;
+//# sourceMappingURL=signup.component.js.map

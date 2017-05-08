@@ -12,6 +12,9 @@ var core_1 = require("@angular/core");
 var SearchComponent = (function () {
     function SearchComponent() {
     }
+    SearchComponent.prototype.ngOnInit = function () {
+        $(".button-collapse").sideNav();
+    };
     return SearchComponent;
 }());
 SearchComponent = __decorate([

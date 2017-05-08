@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 declare var jQuery:any;
 declare var $:any;
@@ -9,6 +9,10 @@ declare var $:any;
   styleUrls: ['./css/search.css'],
 })
 
-export class SearchComponent {
+export class SearchComponent implements OnInit {
 	constructor() {}
+
+	ngOnInit() {
+		$(".button-collapse").sideNav();
+	}
 }

@@ -15,6 +15,7 @@ var HomeComponent = (function () {
     HomeComponent.prototype.ngOnInit = function () {
         $('.carousel.carousel-slider').carousel({ fullWidth: true });
         $('ul.tabs').tabs();
+        $(".button-collapse").sideNav();
     };
     return HomeComponent;
 }());

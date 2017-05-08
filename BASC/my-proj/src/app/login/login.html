@@ -9,6 +9,7 @@
 		<div class="container">
 		<div class="section">
 			<div class="row">
+			<form action="#">
 				<div class="col offset-l4 l4 s12 white z-depth-2 login-wrapper">
 					<h4 class="center-align light-blue-text text-lighten-3">Inicia sesión</h4>
 					<div class="divider"></div>
@@ -45,10 +46,11 @@
 								</div>
 							</div>
 							<div class="divider"></div>
-							 <p class="flow-text">¿Nuevo en BASC? <a>¡Registrame!</a></p>
+							 <p class="flow-text">¿Nuevo en BASC? <a [routerLink]="['/signup']">¡Registrame!</a></p>
 						</form>
 					</div>
 				</div>
+				</form>
 			</div>
 			</div>
 			<br><br>

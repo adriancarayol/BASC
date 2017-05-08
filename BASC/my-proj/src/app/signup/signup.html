@@ -1,0 +1,151 @@
+	<header>
+		<nav>
+			<div class="nav-wrapper white">
+				<a [routerLink]="['']" class="brand-logo center light-blue-text text-lighten-3"><img src="/img/rocket-icon.png" width='30px' height='30px'> BASC</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="section">
+				<div class="row">
+					<form action="#">
+						<div class="col offset-l4 l4 s12 white z-depth-2 login-wrapper">
+							<h4 class="center-align light-blue-text text-lighten-3">Registrarse</h4>
+							<div class="divider"></div>
+							<div class="row">
+								<form class="col s12">
+									<div class="row">
+										<div class="input-field col s12">
+											<i class="material-icons prefix">account_circle</i>
+											<input id="email" type="email" class="validate">
+											<label for="email">Nombre</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<i class="material-icons prefix">account_circle</i>
+											<input id="email" type="email" class="validate">
+											<label for="email">Apellidos</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<i class="material-icons prefix">assignment_ind</i>
+											<input id="email" type="email" class="validate">
+											<label for="email">DNI</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<select multiple>
+												<option value="1">España</option>
+												<option value="2">Francia</option>
+												<option value="3">Inglaterra</option>
+												<option value="4">Alemania</option>
+											</select>
+											<label>Selecciona el país donde resides actualmente</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<select multiple>
+												<option value="1">Español</option>
+												<option value="2">Francés</option>
+												<option value="3">Inglés</option>
+												<option value="4">Alemán</option>
+											</select>
+											<label>Selecciona tu lenguaje preferido</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<label for="birthday">Selecciona tu fecha de nacimiento</label>
+										 	<input type="date" class="datepicker" id="birthday">
+										 </div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<i class="material-icons prefix">attach_money</i>
+											<input id="email" type="email" class="validate">
+											<label for="email">Número de cuenta bancaria</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<i class="material-icons prefix">email</i>
+											<input id="email" type="email" class="validate">
+											<label for="email">Correo electrónico</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<i class="material-icons prefix">lock</i>
+											<input id="pass" type="password" class="validate">
+											<label for="pass">Contraseña</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="input-field col s12">
+											<i class="material-icons prefix">lock</i>
+											<input id="pass" type="password" class="validate">
+											<label for="pass">Repetir contraseña</label>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col s12">
+											<p style="text-align: center;">Escoge tu tipo de cuenta</p>
+											<p style="text-align: center;">
+												<input name="group1" type="radio" id="test1" />
+												<label for="test1">Empresario</label>
+											</p>
+											<p style="text-align: center;">
+												<input name="group1" type="radio" id="test2" />
+												<label for="test2">Inversor</label>
+											</p>
+										</div>
+									</div>
+									<div class="divider"></div>
+									<div class="row">
+										<div class="col s12">
+											<p style="text-align: center;">
+												<a class="btn waves-effect waves-light light-blue lighten-3" [routerLink]="['/project']">Crear cuenta</a>
+											</p>
+										</div>
+									</div>
+									<div class="divider"></div>
+									<p class="flow-text">¿Ya tienes cuenta? <a [routerLink]="['/login']">¡Iniciar sesión!</a></p>
+								</form>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<br><br>
+			<div class="section"></div>
+		</div>
+	</main>
+	<footer class="page-footer white ">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="light-blue-text text-lighten-3">Base Founding</h5>
+					<p class="light-blue-text text-lighten-3">Es hora de hacer realidad tu proyecto.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="light-blue-text text-lighten-3">Links</h5>
+					<ul>
+						<li><a class="light-blue-text text-darken-3" [routerLink]="['/about']">Nosotros</a></li>
+						<li><a class="light-blue-text text-darken-3" href="#!">Contacto</a></li>
+						<li><a class="light-blue-text text-darken-3" href="#!">Ayuda</a></li>
+						<li><a class="light-blue-text text-darken-3" href="#!">Condiciones legales</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container light-blue-text text-darken-3">
+				© 2017 Base Founding
+			</div>
+		</div>
+	</footer>
